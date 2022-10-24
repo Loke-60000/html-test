@@ -1,0 +1,144 @@
+body {
+    background-color: #edf2f8;
+    margin: 2% 15% 0% 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2,auto);
+    gap: 10px;
+    grid-template-areas: "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+    gap: 30px;
+    
+}
+
+.item:nth-child(1) {
+    grid-area: daniel;
+    background-color: #733fc8 ;
+    padding: 3%;
+    border-radius: 25px;
+    z-index: -2;
+}
+.item:nth-child(1) 
+
+.vector {
+    position: absolute;
+    left: 25%;
+    top: 6%;
+    height: 15%;
+    border-radius: 0px;
+    z-index: -1;
+}
+
+.ontop {
+    z-index: 1;
+}
+
+.item:nth-child(1) h1 {
+    position: relative;
+    z-index: 10;
+    }
+
+.item:nth-child(2) {
+    grid-area: jonathan;
+    background-color: #49556b;
+    padding: 3%;
+    border-radius: 25px;
+}
+
+.item:nth-child(3) {
+    grid-area: jeanette;
+    background-color: #FFFFFF;
+    padding: 3%;
+    border-radius: 25px;
+
+}
+
+.item:nth-child(3) h1, p {
+    color: #5F636E;
+    }
+
+.item:nth-child(4) {
+    grid-area: patrick;
+    background-color: #18202d;
+    color: #FFFFFF;
+    padding: 3%;
+    border-radius: 25px;
+}
+
+.item:nth-child(5) {
+    grid-area: kira;
+    background-color: #FFFFFF;
+    padding: 3%;
+    border-radius: 25px;
+    box-shadow: 2px 2px 15px #d2d8df;
+}
+
+.item:nth-child(5) h1 {
+color: #5F636E;
+}
+
+
+section IMG {
+    border-radius: 25PX;
+}
+
+section {
+    display:flex;
+
+}
+.opacity {
+    opacity: 90%;
+    color: grey;
+    font-weight: 500;
+}
+
+.name {
+    display: flex;
+    flex-direction: center;
+}
+
+ .name2 {
+    display: flex;
+    flex-direction: column;
+ }
+
+.name2 p {
+    color: #FFFFFF;
+}
+
+.attribution {
+    color: #18202d;
+    padding: 1%;
+}
+
+:any-link {
+    text-decoration: none;
+}
+
+
+@media (max-width : 943px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1 auto;
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        grid-template-areas:
+            "daniel "
+            "daniel" 
+            "jonathan"
+            "kira"
+            "kira"
+            "jeanette"
+            "patrick" 
+            "patrick";
+    }
+    body {
+        margin: 2% 1.5% 0% 10%;
+    }
+}
+
